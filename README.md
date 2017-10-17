@@ -4,9 +4,14 @@
 
 第二步：通过git clone克隆远程仓库
 
+```bash
+$ git clone git@github.com:wanglq80/study-webpack.git
+```
+
 第三步：cd到项目目录，通过npm初始化一个package.json文件
 
 ```bash
+$ cd study-webpack
 $ npm init -y
 ```
 
@@ -26,13 +31,13 @@ $ npm install --save-dev <package>
 
 第七步：
 
-#通过CLI执行webpack
+#简单通过CLI执行webpack（大多数项目需要复杂的设置，使用这种方式运行webpack不够灵活）
 
 ```bash
 $ ./node_moduls/.bin/webpack src/index.js dist/bundle.js
 ```
 
-#使用一个配置文件
+#使用一个配置文件（相比第一种方式，具有更多的灵活性）
 
 ```javascript
 //webpack.config.js
@@ -44,7 +49,7 @@ module.exports = {
     }
 }
 ```
-然后，通过CLI执行
+然后，通过CLI执行webpack
 
 ```bash
 ./node_modules/.bin/webpack --config webpack.config.js
