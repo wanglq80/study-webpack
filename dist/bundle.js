@@ -80,7 +80,7 @@ function component () {
 	// Lodash（目前通过一个 script 脚本引入）对于执行这一行是必需的
 	
     // Lodash, now improted by this script
-    element.innerHTML = __WEBPACK_IMPORTED_MODULE_0_lodash___default.a.join(['Hello', 'webpack'], ' ');
+    element.innerHTML = __WEBPACK_IMPORTED_MODULE_0_lodash___default.a.join(['Hello', 'webpack！'], ' ');
 
 	return element;
 }
