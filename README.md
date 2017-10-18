@@ -8,7 +8,7 @@
 $ git clone git@github.com:wanglq80/study-webpack.git
 ```
 
-第三步：cd到项目目录，通过npm初始化一个package.json文件
+第三步：cd到项目目录，如果新建项目没有package.json文件，通过npm初始化一个package.json文件；如果新项目中有package.json文件，直接第六步，执行第二条bash命令
 
 ```bash
 $ cd study-webpack
@@ -27,6 +27,10 @@ $ npm install --save-dev webpack
 
 ```bash
 $ npm install --save-dev <package>
+```
+
+```bash
+$ npm install --save-dev
 ```
 
 第七步：
