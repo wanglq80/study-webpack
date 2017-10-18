@@ -73,7 +73,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_lodash__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__style_css__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__style_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__style_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__icon_png__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__icon_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__icon_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__data_xml__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__data_xml___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__data_xml__);
 // index.js
+
+
 
 
 
@@ -83,6 +89,14 @@ function component () {
 	// Lodash, now improted by this script
     element.innerHTML = __WEBPACK_IMPORTED_MODULE_0_lodash___default.a.join(['Hello', 'webpack！'], ' ');
     element.classList.add('hello');
+
+    // 将图像添加到我们现有的 div
+    var myIcon = new Image();
+    myIcon.src = __WEBPACK_IMPORTED_MODULE_2__icon_png___default.a;
+
+    element.appendChild(myIcon);
+
+    console.log(__WEBPACK_IMPORTED_MODULE_3__data_xml___default.a);
 
 	return element;
 }
@@ -17251,14 +17265,14 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(7)(content, options);
+var update = __webpack_require__(9)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../node_modules/_css-loader@0.28.7@css-loader/index.js!./style.css", function() {
-			var newContent = require("!!../node_modules/_css-loader@0.28.7@css-loader/index.js!./style.css");
+		module.hot.accept("!!../node_modules/css-loader/index.js!./style.css", function() {
+			var newContent = require("!!../node_modules/css-loader/index.js!./style.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -17276,7 +17290,7 @@ exports = module.exports = __webpack_require__(6)(undefined);
 
 
 // module
-exports.push([module.i, "/*style.css*/\r\n.hello {\r\n\tcolor: red;\r\n}", ""]);
+exports.push([module.i, "/*style.css*/\r\n@font-face {\r\n\tfont-family: 'MyFont';\r\n\tsrc: url(" + __webpack_require__(7) + ") format('woff2'),\r\n\t\t url(" + __webpack_require__(8) + ") format('woff');\r\n\tfont-weight: 600;\r\n\tfont-style: normal;\r\n}\r\n.hello {\r\n\tcolor: red;\r\n\tfont-family: 'MyFont';\r\n\tbackground: rgba(255,255,0,0.5);\r\n}", ""]);
 
 // exports
 
@@ -17367,6 +17381,18 @@ function toComment(sourceMap) {
 /* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
+module.exports = __webpack_require__.p + "916d691c52c2e851e1cb7385f62b54b8.woff2";
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "7f30d9a7072b207ff9fa04db4a94ba0c.woff";
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
 /*
 	MIT License http://www.opensource.org/licenses/mit-license.php
 	Author Tobias Koppers @sokra
@@ -17420,7 +17446,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(8);
+var	fixUrls = __webpack_require__(10);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -17736,7 +17762,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 8 */
+/* 10 */
 /***/ (function(module, exports) {
 
 
@@ -17829,6 +17855,18 @@ module.exports = function (css) {
 	return fixedCss;
 };
 
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "c316d6738d06b04b8bf9de3f19d775c5.png";
+
+/***/ }),
+/* 12 */
+/***/ (function(module, exports) {
+
+module.exports = {"note":{"to":["Mary"],"from":["John"],"heading":["Reminer"],"body":["Call Cindy on Tuesday"]}}
 
 /***/ })
 /******/ ]);
