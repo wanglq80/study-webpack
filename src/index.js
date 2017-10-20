@@ -4,10 +4,10 @@ import './style.css';
 import Icon from './icon.png';
 import Data from './data.xml';
 
-function component () {
-	var element = document.createElement('div');
+function component() {
+    var element = document.createElement('div');
 
-	// Lodash, now improted by this script
+    // Lodash, now improted by this script
     element.innerHTML = _.join(['Hello', 'webpack！'], ' ');
     element.classList.add('hello');
 
@@ -19,7 +19,7 @@ function component () {
 
     console.log(Data);
 
-	return element;
+    return element;
 }
 
 document.body.appendChild(component());
