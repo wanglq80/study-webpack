@@ -84,7 +84,7 @@ function component() {
 	//...
 }
 ```
-第四步：在命令行执行一下命令
+第四步：在命令行执行以下命令
 
 ```bash
 $ npm run build
