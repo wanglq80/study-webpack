@@ -15,7 +15,6 @@ module.exports = {
 		new CleanWebpackPlugin(['dist']),
 		new HtmlWebpackPlugin({
 			title: 'Development'
-
 		})
 	],
 	output: {
