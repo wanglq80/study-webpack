@@ -8,10 +8,14 @@ module.exports = {
 		app: './src/index.js',
 		print: './src/print.js'
 	},
+	devServer: {
+		contentBase: './dist'
+	},
 	plugins: [
 		new CleanWebpackPlugin(['dist']),
 		new HtmlWebpackPlugin({
-			title: 'Output Management'
+			title: 'Development'
+
 		})
 	],
 	output: {
